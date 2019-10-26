@@ -170,8 +170,13 @@ p {
 }
 .navigation {
   display: flex;
-  background: #f4f4f4;
+  background-color: rgba(244, 244, 244, 0.75);
   flex-direction: column;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
 }
 .navigation .navigation-logo {
   text-align: center;
@@ -201,6 +206,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  padding-top: 100px;
 }
 .home .intro img {
   width: 100%;
