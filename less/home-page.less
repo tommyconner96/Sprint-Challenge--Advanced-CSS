@@ -24,9 +24,23 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @phone {
+      .sky {
+        display:none;
+      }
+      .launch {
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
+      @media @phone {
+        width: 95%;
+        margin:auto;
+        padding-top:10px;
+        padding-bottom: 10px;
+      }
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
@@ -52,8 +66,17 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      padding:20px 0px;
+    }
+
     .walk-text {
       width: 50%;
+      @media @phone {
+        width: 95%;
+        padding:15px;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -65,17 +88,28 @@
 
       .btn {
         .button (black, white);
+        @media @phone {
+          text-align: center;
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone {
+        width: 95%;
+        margin: auto;
+      }
       
       img {
         width: 100%;
         height: auto;
-        border-radius: 10px;
+        border-radius: 20px;
+        @media @phone {
+          padding-top:10px;
+          padding-bottom: 10px;
+        }
       }
     }
   }
