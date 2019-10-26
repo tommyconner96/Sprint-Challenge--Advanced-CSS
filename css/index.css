@@ -1,3 +1,11 @@
+.mobile-margin {
+  width: 95%;
+  margin: auto;
+}
+.width-height {
+  width: 100%;
+  height: auto;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -181,7 +189,7 @@ p {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 2rem;
   width: 100%;
 }
 footer {
@@ -260,7 +268,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-text {
     width: 95%;
-    padding: 15px;
+    margin: auto;
   }
 }
 .home .walk .walk-text h3 {
@@ -292,6 +300,8 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     text-align: center;
+    width: 95%;
+    margin: auto;
   }
 }
 .home .walk .walk-img {
